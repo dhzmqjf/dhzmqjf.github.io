@@ -1,1 +1,95 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/timeline-cover.css">
+  <link rel="stylesheet" href="./css/feature-list.css">
+  <title>Facebook Profile Page</title>
+</head>
+<body>
+  <!--배경사진, 프로필사진, 이름 -->
+  <div class="timeline-cover">
+    <div class="cover-photo">
+      <img src="./images/1week_test1.jpg" alt="커버사진">
+    </div>
+    <div class="profile-pohto-down">
+      <div class="profile-inner">
+        <a href="">
+          <div class="profile-frame">
+            <img src="./images/1week_test2.jpg" alt="프로필사진">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--공유, 포스팅 버튼 리스트 -->
+  <div class="feature-list">
+    <div class="feature-list-inner">
+      <div class="feature-item">
+        <a class="feature-item-link" href="">
+          <i class="feature-item-icon post"></i>
+          <span class="feature-item-name">POST</span>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <a href="">
+          <i></i>
+          <span></span>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <a href="">
+          <i></i>
+          <span></span>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <a href="">
+          <i></i>
+          <span></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--프로필 정보 : 사는곳, 직장 -->
+  <div class="profile-description">
+
+  </div>
+  <!-- 댓글 영역 -->
+  <div class="timeline-body">
+    <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">공유하기
+      </a>
+    </div>
+  </div>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1336861193049744',
+      xfbml      : true,
+      version    : 'v2.9'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+</body>
+</html>

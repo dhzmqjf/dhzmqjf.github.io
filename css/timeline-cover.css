@@ -1,0 +1,30 @@
+.cover-photo {
+  height: 180px;
+}
+.cover-photo img{
+  width: 100%;
+  height: 180px;
+}
+
+.profile-pohto-down{
+  display: inline-block;
+  width: 120px;
+  height: 60px;
+}
+.profile-inner{
+  vertical-align: bottom;
+}
+.profile-frame{
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.125);
+  display: block;
+  background-size: auto;
+  background-color: #fff;
+  margin-top: -50%;
+  padding: 2px;
+  width: 110px;
+}
+.profile-frame img{
+  width: 100%;
+  height: 110px;
+}
